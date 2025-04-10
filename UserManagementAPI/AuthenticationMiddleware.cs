@@ -5,6 +5,7 @@ public class AuthenticationMiddleware
     public AuthenticationMiddleware(RequestDelegate next)
     {
         _next = next; 
+        
     }
 
     public async Task InvokeAsync(HttpContext context)
